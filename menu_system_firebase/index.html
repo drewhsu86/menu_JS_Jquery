@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>JSR-520 Menu</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Internal CSS -->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<div class="row">
+  <div class="container gradient mt-5 mb-5 col-md-6" id="mainContainer" style="margin: 50px">
+    <img src="images/restaurantTitle.png" style="width: 100%"> <br>
+    <h1 class="mb-4">Welcome to JSR-520 Restaurant!</h1>
+    <h3 class="mb-4">Order dishes from our wide selection!</h3>
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div id="menu" class="card-deck mb-3">
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+
+  <div class="container col-md-4">
+    <div class="card-deck sideBar">
+      <!-- style="position: fixed;width: 30%;height: 90%;overflow-y: scroll" -->
+
+        <div class="card bg-light text-dark mb-3" style="width:100%; border-radius: 10px; margin: 20px">
+            <div class="card-body" style="background-color: dodgerblue; border-radius: 10px">
+              <h2 style="color:white"> Your Order here! </h2>
+              <h3 style="color:white"> <i> Warning: </i> Leaving or reloading this page will clear your order! </h3>
+
+              <ul class="list-group" id="order" style="list-style:none">
+
+                <li class="list-group-item-info" style="padding:10px; border-radius: 10px">
+          			<h3> Sub-Total: $0.00  <br>
+          			 Sales Tax: $0.00 <br> <hr>
+          			 Total Price: $0.00 </h3>
+          			</li>
+
+              </ul>
+
+              <div class="card-body" >
+                <button class="btn btn-success" id="submitOrder" style="border:5px solid white; border-radius: 30px">
+                <h2 style="color:white"> Submit Order! </h2>
+                </button>
+              </div>
+
+              <div class="card-body" id="submitMascot">
+
+              </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCgBfbOWF4fNnrWzXyv3Ze_W9YVz8mpZAc",
+      authDomain: "jsr520class.firebaseapp.com",
+      databaseURL: "https://jsr520class.firebaseio.com",
+      projectId: "jsr520class",
+      storageBucket: "",
+      messagingSenderId: "1012125704824",
+      appId: "1:1012125704824:web:8fe6b462e0161fbb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</html>

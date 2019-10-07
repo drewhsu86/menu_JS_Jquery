@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>JSR-520 Restaurant: Thank you for ordering!</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Internal CSS -->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+
+
+  <div class="container gradient" style="margin-left: auto; margin-right: auto; width: 100%">
+
+    <div class="col-sm-12">
+        <div id="thanks" class="col-lg-12 thanks">
+          <p> Thank you for submitting your order! </p>
+          <p id="processing"> Processing... </p>
+          <button onclick="location.href='index.html'" type="button" class="btn btn-primary"> Return to Our Menu </button>
+          <hr>
+          <p style="font-size:30%"> <i> Disclaimer: </i> JSR-520 Restaurant is fictitious and therefore cannot process your order. This website is solely for entertainment and educational purposes. Please do not expect or wait for any order, or for the processing to be finished. Your credit card has not been charged. See terms and conditions for more details. (but don't though, because we don't have any more terms or conditions.) </p>
+        </div>
+    </div>
+
+    <img src="images/restaurantTitle.png" style="width: 100%"> <br>
+
+
+
+    </div>
+
+
+
+
+  <!-- JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCgBfbOWF4fNnrWzXyv3Ze_W9YVz8mpZAc",
+      authDomain: "jsr520class.firebaseapp.com",
+      databaseURL: "https://jsr520class.firebaseio.com",
+      projectId: "jsr520class",
+      storageBucket: "",
+      messagingSenderId: "1012125704824",
+      appId: "1:1012125704824:web:8fe6b462e0161fbb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/submittal.js"></script>
+</html>
