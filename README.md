@@ -2,6 +2,8 @@
 An example restaurant menu management system in Javascript and Jquery (art by me!)
 Backend using Firebase
 
+[Deployed on Surge](https://drewhsu86-menu-system-demo.surge.sh)
+
 HTML File Guide:
 
 1) index.html: site that the CUSTOMER interfaces with. 
